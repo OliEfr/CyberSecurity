@@ -5,6 +5,7 @@
     - Cookies can only be access by sites of same domain
 - URL: subdomain.domain.TLD/ressource?param=value, i.e. www.test.de/index.html?param1=1&param2=2
 - Reverse shells:
+    - Try to load and execute a reverse shell on the remote-machine!
     - Listener: sudo netcat -lvnp {port}
     - Port: use common, open ports, such as 443 or 80
     - Revere-Shell [Cheatsheet](https://github.com/swisskyrepo/PayloadsAllTheThings/blob/master/Methodology%20and%20Resources/Reverse%20Shell%20Cheatsheet.md#bash-tcp)
