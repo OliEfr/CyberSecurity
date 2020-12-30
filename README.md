@@ -1,5 +1,6 @@
 # CyberSecurity
-[TryHackMe](https://tryhackme.com/) is a great platform to get started with cyber security! Most resources listed here I learned about at the TryHackMe AdventOfCyber2.
+Personal collection of tips, tricks and ressources for cyber security. [TryHackMe](https://tryhackme.com/) is a great platform to get started with cyber security! I espacially recommend AdventOfCyber.
+
 ## Web
 - HTTP is stateless &rarr; (server-)session identification with cookies stored on client (i.e. web browser)
     - Cookies can only be access by sites of same domain
