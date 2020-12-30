@@ -17,7 +17,7 @@ Personal collection of tips, tricks and ressources for cyber security. [TryHackM
         4. stty raw -echo; fg
         &rarr; Now you can use: tab autocomplete, arrow keys, and ctrl+c
 
-- BurpSuite: track http-traffic & dictionary attacks on websites
+- BurpSuite: track http-traffic & perform dictionary attacks on websites and http-requests
     - Perform dictionary attacks by iterating through a list of credentials (e.g. rockyou.txt) for a specific http-request
         1. Intercept traffic by proxying through BurpSuite (use FoxyProxy extension in Firefox or build-in browser)
         2. Select request with credentials & send to "Intruder" tab
