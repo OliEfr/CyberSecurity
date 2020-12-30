@@ -23,7 +23,7 @@ Personal collection of tips, tricks and ressources for cyber security. [TryHackM
         2. Select request with credentials & send to "Intruder" tab
         3. Select payloads for each position
         4. Start attack
-    - BurpSuite can also be used to track all network requests drop specific requests
+    - BurpSuite can also be used to track all network requests and drop specific requests
 - Discovering web-site directories and bruteforcing url parameters:
     - gobuster: Bruteforce common paths (files and folders), aka 'enumerating a website'
         - example: gobuster {-m} {dir} -u http://example.com -w wordlist.txt -x php,txt,html -t 40
