@@ -72,15 +72,15 @@ Enumeration for priviledge escalation. Guides:
 - Databse of Binaries that can be used to escalate priviledges can be found [here](https://gtfobins.github.io/)
 
 ## Knowledge bases for exploits
-- most software has known vulnarabilities. These are collected and databases
-- Vulnarabilities can be found by searching for software + version-number
-- vulnerabilities are identified with a CVE-Number
+- most software has known vulnarabilities. These are collected in databases.
+- Vulnarabilities can be found by searching for software + version-number.
+- vulnerabilities are identified with a CVE-Number.
 - [exploit-db](https://www.exploit-db.com/)
 - ([rapid7](https://www.rapid7.com/))
 - ([mitre](https://cve.mitre.org/cve/))
 
 ## Exploit known vulnarabilities with metasploit
-- first, look up a vulnarability for your version of a software in a knowledge database. Then use metasploit to exploit that vulnarabitlity
+- first, look up a vulnarability for your version of a software in a knowledge database. Then use metasploit to exploit that vulnarabitlity.
 - start metasploit with "msfconsole -q"
 - search {CVE} &rarr; matching exploits (modules) are listet
 - "use {number}" to use a exploit
@@ -107,7 +107,7 @@ Enumeration for priviledge escalation. Guides:
 
 ## Other Tools and resources
 - samba enumeration with the enum4linux.pl tool
-- [CyberChef] (https://gchq.github.io/CyberChef/)
+- [CyberChef](https://gchq.github.io/CyberChef/)
     - is a 'Cyber Swiss-Army Knife'
     - provides numerous functions for all tasks: encoding, decoding, hashing ...
     - With the "Magic"-recipe you can analyse any given string to detect useful encoding methods.
