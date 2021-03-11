@@ -33,6 +33,9 @@ Personal collection of tips, tricks and ressources for cyber security.
         - example: wfuzz -c -z file,mywordlist.txt -d “username=FUZZ&password=FUZZ” -u http://shibes.thm/login.php
         - example: wfuzz -c -z file,big.txt http://shibes.xyz/api.php?breed=FUZZ
     - wordlist for common paths & folder names: [big.txt](https://github.com/danielmiessler/SecLists/blob/master/Discovery/Web-Content/big.txt)
+
+## Other Tools
+https://endgame.readthedocs.io/en/latest/ --> AWS Pentesting tool that lets you use one-liner commands to backdoor an AWS account's resources. Docs include top prevention and intrusion methods.
 - SQLMap: tool that automates the process of detecting and exploiting SQL injection flaws on websites
     - Install: git clone --depth 1 <https://github.com/sqlmapproject/sqlmap.git> sqlmap-dev
     - [Cheatsheet](https://www.security-sleuth.com/sleuth-blog/2017/1/3/sqlmap-cheat-sheet)
