@@ -115,6 +115,11 @@ Enumeration for priviledge escalation. Guides:
 - ADS: Alternate Data Stream, a file attribute specific to NTFS
     - Learn more about ADS [here](https://blog.malwarebytes.com/101/2015/07/introduction-to-alternate-data-streams/), [here](https://blog.foldersecurityviewer.com/ntfs-alternate-data-streams-the-good-and-the-bad/) and [here](http://www.winfaq.de/faq_html/Content/tip1500/onlinefaq.php?h=tip1915.htm)
     - tool to analyse a binary file (.exe): Strings.exe. Strings scans the file you pass it for strings of a default length of 3 or more characters. You can use the Strings tool to peek inside this mysterious executable file. Usage: strings64.exe -accepteula file.exe
+- Dump user password hashes with [mimikatz](https://github.com/gentilkiwi/mimikatz)
+    - use command `sekurlsa::logonpasswords` to get password hashes (NTLM and SHA1 hashes)
+- All events on windows systems are logged. Also PowerShell-Script executions.
+    - use [FullEventLogView](https://www.nirsoft.net/utils/full_event_log_view.html) to conveniently few all events. (Use Advanced options for specific search.)
+    - (Alternative: use windows build-in event view)
 
 
 ## Other Tools and resources
@@ -125,9 +130,11 @@ Enumeration for priviledge escalation. Guides:
     - With the "Magic"-recipe you can analyse any given string to detect useful encoding methods.
 - lists:
     - https://github.com/danielmiessler/SecLists/ (espacially rockyou.txt for passwords)
-- Crack hashes online (rainbow tables):
+- Crack (password) hashes online (rainbow tables):
     - https://crackstation.net/ 
     - https://md5decrypt.net/en/ 
     - https://hashes.com/en/decrypt/hash 
+- Crack (password) hashes offline:
+    - [John the ripper](https://www.openwall.com/john/)
 - [OWASP](https://owasp.org/): Provides a lot of tools, knowledge and other resources regarding cyber security in the web
 - [OWASP Cheatsheets](https://github.com/OWASP/CheatSheetSeries/tree/master/cheatsheets) for everything related to cybersecurity
