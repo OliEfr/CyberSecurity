@@ -20,6 +20,7 @@ Personal collection of tips, tricks and ressources for cyber security.
         &rarr; Now you can use: tab autocomplete, arrow keys, and ctrl+c
 
 - BurpSuite: track http-traffic & perform dictionary attacks on websites and http-requests
+    - used for [fuzzing](https://de.wikipedia.org/wiki/Fuzzing#:~:text=Fuzzing%2C%20auch%20Robustness%20Testing%2C%20Fuzzy,wieder%20mit%20Zufallsdaten%20beschickt%20wird.)
     - Perform dictionary attacks by iterating through a list of credentials (e.g. rockyou.txt) for a specific http-request
         1. Intercept traffic by proxying through BurpSuite (use FoxyProxy extension in Firefox or build-in browser)
         2. Select request with credentials & send to "Intruder" tab
@@ -29,13 +30,15 @@ Personal collection of tips, tricks and ressources for cyber security.
 - Discovering web-site directories and bruteforcing url parameters:
     - gobuster: Bruteforce common paths (files and folders), aka 'enumerating a website'
         - example: gobuster {-m} {dir} -u http://example.com -w wordlist.txt -x php,txt,html -t 40
+    - dirbuster
+        - example: dirb http://example.com/ ./mywordlist.txt
     - wfuzz: replace url parts with wordlists (e.g. parameters)
         - example: wfuzz -c -z file,mywordlist.txt -d “username=FUZZ&password=FUZZ” -u http://shibes.thm/login.php
         - example: wfuzz -c -z file,big.txt http://shibes.xyz/api.php?breed=FUZZ
     - wordlist for common paths & folder names: [big.txt](https://github.com/danielmiessler/SecLists/blob/master/Discovery/Web-Content/big.txt)
 
 ## Other Tools
-https://endgame.readthedocs.io/en/latest/ --> AWS Pentesting tool that lets you use one-liner commands to backdoor an AWS account's resources. Docs include top prevention and intrusion methods.
+- https://endgame.readthedocs.io/en/latest/ --> AWS Pentesting tool that lets you use one-liner commands to backdoor an AWS account's resources. Docs include top prevention and intrusion methods.
 - SQLMap: tool that automates the process of detecting and exploiting SQL injection flaws on websites
     - Install: git clone --depth 1 <https://github.com/sqlmapproject/sqlmap.git> sqlmap-dev
     - [Cheatsheet](https://www.security-sleuth.com/sleuth-blog/2017/1/3/sqlmap-cheat-sheet)
@@ -65,6 +68,10 @@ https://endgame.readthedocs.io/en/latest/ --> AWS Pentesting tool that lets you 
 - bypass upload filter (e.g. to upload a reverse shell script):
     - client-side filtering: block request using e.g. BurpSuite; this way, js-files can be dropped
     - server-side filtering: of often these filters fitler by file-extension. Avoid these filters by naming files as follows: FILE.jpg.php
+- [VirusTotal](https://www.virustotal.com/gui/)
+    - scan files, URLs, IP addresses, domains, or a file hash you provide using 60+ different Antivirus software products and displays a summary of their scan results
+    - don't upload file that could contain sensitive information directly. Its better to compute the file hash (MD5) and search for file hash
+- 
 
 ## Enumeration
 Enumeration for priviledge escalation. Guides:
@@ -117,15 +124,10 @@ Enumeration for priviledge escalation. Guides:
     - provides numerous functions for all tasks: encoding, decoding, hashing ...
     - With the "Magic"-recipe you can analyse any given string to detect useful encoding methods.
 - lists:
-        -  https://github.com/danielmiessler/SecLists/ (espacially rockyou.txt for passwords)
+    - https://github.com/danielmiessler/SecLists/ (espacially rockyou.txt for passwords)
 - Crack hashes online (rainbow tables):
     - https://crackstation.net/ 
     - https://md5decrypt.net/en/ 
     - https://hashes.com/en/decrypt/hash 
 - [OWASP](https://owasp.org/): Provides a lot of tools, knowledge and other resources regarding cyber security in the web
 - [OWASP Cheatsheets](https://github.com/OWASP/CheatSheetSeries/tree/master/cheatsheets) for everything related to cybersecurity
-
-test sentence
-
-test sentence second commit
-
