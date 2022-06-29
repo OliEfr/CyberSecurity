@@ -138,3 +138,4 @@ Enumeration for priviledge escalation. Guides:
     - [John the ripper](https://www.openwall.com/john/)
 - [OWASP](https://owasp.org/): Provides a lot of tools, knowledge and other resources regarding cyber security in the web
 - [OWASP Cheatsheets](https://github.com/OWASP/CheatSheetSeries/tree/master/cheatsheets) for everything related to cybersecurity
+- 'Hacker' [search engines](https://github.com/edoardottt/awesome-hacker-search-engines)
